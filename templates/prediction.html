@@ -1,0 +1,39 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+    {%if data[0] == 1%}
+    <h1>Machine will have failure and potential failure modes will be_</h1>   
+    
+    {%else%}
+    <h1>Machine will not have failure</h1>
+    
+    {%if data[1] == 1%}
+    <h1>TWF- Tool Wear Failure</h1>
+
+    {%if data[2] == 1%}
+    <h1>HDF- Heat Desipation Failure</h1>
+    
+    {%if data[3] == 1%}
+    <h1>PWF- Power Failure</h1>
+    
+    {%if data[4] == 1%}
+    <h1>OSF- Overstrain Failure</h1>
+    
+    {%if data[5] == 1%}
+    <h1>RNF- Random Failure</h1>
+
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>

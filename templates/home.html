@@ -1,0 +1,22 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> MACHINE MAINTENANCE DETECTION </h1><br>
+        
+        <form method="GET", action="{{url_for('home')}}">
+           <b> Type :  <input type="text", name='Type', placeholder="H:0, L:1, M:2"> <br><br>
+            Air_temp :  <input type="text", name='Air_temp', placeholder="295 to 305 Deg K"> <br><br>
+            Process_temp :  <input type="text", name='Process_temp', placeholder="305 to 315 Deg K"> <br><br>
+            Speed : <input type="text", name='Speed', placeholder="1100 to 3000 rpm"> <br><br>
+            Torque : <input type="text", name='Torque', placeholder="3.0 to 80.0 Nm"> <br><br>
+            Tool_wear : <input type="text", name='Tool_wear', placeholder="0 to 255 min"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+    </center>
+
+    </body>
+</html>
