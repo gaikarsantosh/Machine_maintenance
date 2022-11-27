@@ -7,18 +7,18 @@ app=Flask(__name__)
 model= pickle.load(open('RF_model.pkl','rb'))
 
 
-@app.route('/')
-def Home():
-    return 'Welcome to home page'
-
 # @app.route('/')
-# def man():
-#     return render_template('home.html')
+# def Home():
+#     return 'Welcome to home page'
+
+@app.route('/')
+def man():
+    return render_template('home.html')
 
 @app.route('/Prediction', methods=['GET','POST'])
 def prediction():
     data = request.form
-    if request.method == 'GET':
+    if request.method == 'POST':
         Type = int(data['Type'])
         Air_temp = float(data['Air_temp'])
         Process_temp = float(data['Process_temp'])
